@@ -5,6 +5,7 @@ import pprint
 
 
 def site_url(web_url):
+    web_url = web_url[:-1] if web_url.endswith('/') else web_url
     links = [web_url]
     result = {}
     for web in links:
@@ -25,5 +26,5 @@ def site_url(web_url):
     return result
 
 
-result = site_url("http://0.0.0.0:8000")
-pprint.pprint(result)
+if __name__ == '__main__':
+    pprint.pprint(site_url('http://0.0.0.0:8000'))
