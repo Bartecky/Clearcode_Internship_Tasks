@@ -1,0 +1,1 @@
+**Clearcode Internship Task - Katowice**
