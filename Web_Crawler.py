@@ -5,6 +5,9 @@ import pprint
 
 
 def site_url(web_url):
+    """
+    returns 'scraped' website as dictionary-type result which contains urls, links, titles
+    """
     web_url = web_url[:-1] if web_url.endswith('/') else web_url
     links = [web_url]
     result = {}

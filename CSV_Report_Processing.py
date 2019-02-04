@@ -6,6 +6,9 @@ from collections import OrderedDict
 file = 'cc.csv'
 
 def format_csv_file(file):
+    """
+    takes input file and returns formatted csv file
+    """
     with open(file, 'r') as csv_file:
         csv_reader = csv.reader(csv_file)
 
