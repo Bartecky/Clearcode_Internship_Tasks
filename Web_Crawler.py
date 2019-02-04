@@ -4,7 +4,7 @@ from urllib.parse import urljoin
 import pprint
 
 
-def site_url(web_url):
+def site_map(web_url):
     """
     returns 'scraped' website as dictionary-type result which contains urls, links, titles
     """
@@ -30,4 +30,4 @@ def site_url(web_url):
 
 
 if __name__ == '__main__':
-    pprint.pprint(site_url('http://0.0.0.0:8000'))
+    pprint.pprint(site_map('http://0.0.0.0:8000'))
